@@ -1,2 +1,2 @@
-export * from './transform'
-export * from './distance'
+export * from "./transform";
+export * from "./distance";

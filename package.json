@@ -21,7 +21,8 @@
     "check": "biome check --write",
     "dev": "rslib build --watch",
     "format": "biome format --write",
-    "test": "vitest --ui"
+    "test": "vitest --ui",
+    "release": "release-it"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -35,7 +36,8 @@
   "dependencies": {
     "@turf/distance": "^7.2.0",
     "@turf/helpers": "^7.2.0",
-    "coordtransform": "^2.1.2"
+    "coordtransform": "^2.1.2",
+    "release-it": "^18.1.2"
   },
   "pnpm": {
     "patchedDependencies": {
