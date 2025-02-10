@@ -8,7 +8,7 @@
     "release": true
   },
   "hooks": {
-    "before:init": ["pnpm run check", "pnpm run build"],
-    "after:bump": ["pnpx auto-changelog -p", "pnpm run check"]
+    "before:init": ["pnpm run check"],
+    "after:bump": ["pnpx auto-changelog -p", "pnpm run build", "pnpm run check"]
   }
 }
