@@ -4,7 +4,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anydong/coordinate-transform"
+    "url": "git+https://github.com/anydong/coordinate-transform.git"
   },
   "license": "MIT",
   "exports": {
