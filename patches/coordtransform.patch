@@ -1,0 +1,58 @@
+diff --git a/.npmignore b/.npmignore
+deleted file mode 100644
+index ef772a6e295bce61de3d915fcfc843ed698d84f0..0000000000000000000000000000000000000000
+diff --git a/coordtransform.d.ts b/coordtransform.d.ts
+new file mode 100644
+index 0000000000000000000000000000000000000000..01125bc769aa2bac937a22cd8bdf1159a9d41271
+--- /dev/null
++++ b/coordtransform.d.ts
+@@ -0,0 +1,37 @@
++declare module 'coordtransform' {
++    /**
++     * WGS-84 转 GCJ-02
++     * 
++     * @param lng 经度
++     * @param lat 维度
++     * @returns [lng, lat]
++     */
++    export function wgs84togcj02(lng: number, lat: number): [number, number]
++
++    /**
++     * GCJ-02 转 WGS-84
++     * 
++     * @param lng 经度
++     * @param lat 维度
++     * @returns [lng, lat]
++     */
++    export function gcj02towgs84(lng: number, lat: number): [number, number]
++
++    /**
++     * GCJ-02 转 BD-09
++     * 
++     * @param lng 经度
++     * @param lat 维度
++     * @returns [lng, lat]
++     */
++    export function gcj02tobd09(lng: number, lat: number): [number, number]
++
++    /**
++     * BD-09 转 GCJ-02
++     * 
++     * @param lng 经度
++     * @param lat 维度
++     * @returns [lng, lat]
++     */
++    export function bd09togcj02(lng: number, lat: number): [number, number]
++}
+diff --git a/package.json b/package.json
+index 57de812be56f5bd09f760a37874ae0e0d72657cc..5f83d3843b129a5e30b53705e838f96651aa3340 100644
+--- a/package.json
++++ b/package.json
+@@ -3,6 +3,7 @@
+   "version": "2.1.2",
+   "description": "A common coordinate systems conversion module!",
+   "main": "index.js",
++  "types": "coordtransform.d.ts",
+   "scripts": {
+     "test": "node test/app.js"
+   },
