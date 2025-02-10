@@ -9,7 +9,7 @@
   },
   "hooks": {
     "before:init": ["pnpm run check", "pnpm run build"],
-    "after:version": ["pnpm run check"],
-    "after:bump": "pnpx auto-changelog -p"
+    "after:bump": ["pnpx auto-changelog -p"],
+    "before:git:commit": ["pnpm run check"]
   }
 }
