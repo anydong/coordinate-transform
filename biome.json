@@ -2,7 +2,7 @@
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
     "ignoreUnknown": true,
-    "include": ["src", "tests", "package.json", "biome.json", "tsconfig.json"],
+    "include": ["src", "tests", "package.json", "biome.json", "tsconfig.json", ".release-it.json"],
     "ignore": []
   },
   "formatter": {
