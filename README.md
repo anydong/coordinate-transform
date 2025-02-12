@@ -1,5 +1,8 @@
 # coordinate-transform
 
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
+[![NPM Version](https://img.shields.io/npm/v/coordinate-transform)](https://www.npmjs.com/package/coordinate-transform)
+
 一个坐标系转换类库，支持 WGS-84、GCJ-02、BD-09 坐标系之间的转换。
 
 说明：
