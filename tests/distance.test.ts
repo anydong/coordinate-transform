@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import { distance, gcj02towgs84 } from "../src/index";
 
 describe("distance", () => {
+  // https://lbs.amap.com/demo/javascript-api-v2/example/calcutation/calculate-distance-between-two-markers
+  // 高德计算结果为 1571
   it("gcj-02", () => {
     const a = [116.368904, 39.923423];
     const b = [116.387271, 39.922501];
